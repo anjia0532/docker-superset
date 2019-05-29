@@ -43,6 +43,7 @@ RUN useradd -U -m superset && \
     pip install --no-cache-dir -r requirements.txt && \
     rm requirements.txt && \
     pip install --no-cache-dir \
+        kylinpy==1.0.7 \
         flask-cors==3.0.3 \
         flask-mail==0.9.1 \
         flask-oauth==0.12 \
